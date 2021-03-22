@@ -16,3 +16,26 @@ function headerScroll(){
     }
 }
 
+
+// Back to top
+
+let btnToTop = document.getElementById('btnToTop');
+
+window.onscroll = function(){
+    scrollFunction();
+}
+
+function scrollFunction(){
+    if(document.body.scrollTop >20 || document.documentElement.scrollTop>20){
+        btnToTop.style.display = 'block';
+    }
+    else{
+        btnToTop.style.display = 'none';
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function toTopFunction(){
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
