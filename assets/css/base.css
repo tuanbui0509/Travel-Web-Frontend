@@ -119,3 +119,16 @@ input[type=text] {
 .white {
     background: var(--white) !important;
 }
+
+/* using to lcik search */
+.active{
+    display: block!important;
+}
+
+.show{
+    opacity: 1!important;
+}
+
+.fade{
+    transition: opacity 0.2s linear;
+}

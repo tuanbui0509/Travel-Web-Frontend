@@ -95,71 +95,145 @@
 
         </div>
         <div class="grid search">
-            <button class="search-btn search-btn--s search-btn--active btn btn--active">Search Tour</button>
-            <button class="search-btn search-btn--s btn">Hotel</button>
-            <div class="row no-margin search-content">
-                <div class="col no-gutters l-2-4 m-12 search-item-wrapper">
-                    <div class="search-item">
-                        <label for="" class="search-label">Destination</label>
-                        <div class="search-input d-flex">
-                            <input type="text" placeholder="Search place">
-                            <button class="search-input-btn"><i class="fas fa-search"></i></button>
+            <button class="search-btn search-btn--s search-btn--active btn btn--active" search = "active">Search Tour</button>
+            <button class="search-btn search-btn--s btn" search ="">Hotel</button>
+            
+            <form action="" class="fade show active wp-search-content"  form = "active">
+                <div class="row no-margin search-content ">
+                    <div class="col no-gutters l-2-4 m-12 search-item-wrapper">
+                        <div class="search-item">
+                            <label for="" class="search-label">Destination</label>
+                            <div class="search-input d-flex">
+                                <input type="text" placeholder="Search place">
+                                <button class="search-input-btn"><i class="fas fa-search"></i></button>
 
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col no-gutters l-2-4 m-12 search-item-wrapper">
-                    <div class="search-item">
-                        <label for="" class="search-label">Check-In Date</label>
-                        <div class="search-input d-flex">
-                            <input type="text" placeholder="Check In Date" onfocus="(this.type='date')"
-                                onblur="(this.type='text')" id="dateIn">
-                            <!-- <i class="fas fa-calendar-alt"></i> -->
+                    <div class="col no-gutters l-2-4 m-12 search-item-wrapper">
+                        <div class="search-item">
+                            <label for="" class="search-label">Check-In Date</label>
+                            <div class="search-input d-flex">
+                                <input type="text" placeholder="Check In Date" onfocus="(this.type='date')"
+                                    onblur="(this.type='text')" id="dateInSearch">
+                                <!-- <i class="fas fa-calendar-alt"></i> -->
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col no-gutters l-2-4 m-12 search-item-wrapper">
-                    <div class="search-item">
-                        <label for="" class="search-label">Check-Out Date</label>
-                        <div class="search-input d-flex">
-                            <input type="text" placeholder="Check-Out Date" onfocus="(this.type='date')"
-                                onblur="(this.type='text')" id="dateOut">
-                            <!-- <i class="fas fa-calendar-alt"></i> -->
+                    <div class="col no-gutters l-2-4 m-12 search-item-wrapper">
+                        <div class="search-item">
+                            <label for="" class="search-label">Check-Out Date</label>
+                            <div class="search-input d-flex">
+                                <input type="text" placeholder="Check-Out Date" onfocus="(this.type='date')"
+                                    onblur="(this.type='text')" id="dateOutSearch">
+                                <!-- <i class="fas fa-calendar-alt"></i> -->
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col no-gutters l-2-4 m-12 search-item-wrapper">
-                    <div class="search-item">
-                        <label for="prices" class="search-label">Price Limit</label>
-                        <div class="search-input d-flex">
-                            <select name="" id="" class="search-select">
-                                <option value="" disabled selected class="search-option--default">Select price</option>
-                                <option value="">$100</option>
-                                <option value="">$10,000</option>
-                                <option value="">$50,000</option>
-                                <option value="">$100,000</option>
-                                <option value="">$200,000</option>
-                                <option value="">$300,000</option>
-                                <option value="">$400,000</option>
-                                <option value="">$500,000</option>
-                                <option value="">$600,000</option>
-                                <option value="">$700,000</option>
-                                <option value="">$800,000</option>
-                                <option value="">$900,000</option>
-                                <option value="">$1,000,000</option>
-                                <option value="">$2,000,000</option>
-                            </select>
-                            <!-- <input type="text" placeholder="$300.000"> -->
-                            <!-- <i class="fas fa-chevron-down"></i> -->
+                    <div class="col no-gutters l-2-4 m-12 search-item-wrapper">
+                        <div class="search-item">
+                            <label for="prices" class="search-label">Price Limit</label>
+                            <div class="search-input d-flex">
+                                <select name="" id="selectSearch" class="search-select">
+                                    <option value="" disabled selected class="search-option--default">Select price
+                                    </option>
+                                    <option value="">$100</option>
+                                    <option value="">$10,000</option>
+                                    <option value="">$50,000</option>
+                                    <option value="">$100,000</option>
+                                    <option value="">$200,000</option>
+                                    <option value="">$300,000</option>
+                                    <option value="">$400,000</option>
+                                    <option value="">$500,000</option>
+                                    <option value="">$600,000</option>
+                                    <option value="">$700,000</option>
+                                    <option value="">$800,000</option>
+                                    <option value="">$900,000</option>
+                                    <option value="">$1,000,000</option>
+                                    <option value="">$2,000,000</option>
+                                </select>
+                                <!-- <input type="text" placeholder="$300.000"> -->
+                                <!-- <i class="fas fa-chevron-down"></i> -->
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col no-gutters l-2-4 m-12 search-item-wrapper">
-                    <div class="search-item search-item--search">
-                        <button class="search-btn search-btn--full btn">Search</button>
+                    <div class="col no-gutters l-2-4 m-12 search-item-wrapper">
+                        <div class="search-item search-item--search">
+                            <button class="search-btn search-btn--full btn">Search</button>
+                        </div>
                     </div>
+
                 </div>
-            </div>
+            </form>
+
+            <form action="" class="fade wp-search-content" form = "">
+                <div class="row no-margin search-content ">
+                    <div class="col no-gutters l-2-4 m-12 search-item-wrapper">
+                        <div class="search-item">
+                            <label for="" class="search-label">Destination</label>
+                            <div class="search-input d-flex">
+                                <input type="text" placeholder="Search place">
+                                <button class="search-input-btn"><i class="fas fa-search"></i></button>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col no-gutters l-2-4 m-12 search-item-wrapper">
+                        <div class="search-item">
+                            <label for="" class="search-label">Check-In Date</label>
+                            <div class="search-input d-flex">
+                                <input type="text" placeholder="Check In Date" onfocus="(this.type='date')"
+                                    onblur="(this.type='text')" id="dateInHotel">
+                                <!-- <i class="fas fa-calendar-alt"></i> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col no-gutters l-2-4 m-12 search-item-wrapper">
+                        <div class="search-item">
+                            <label for="" class="search-label">Check-Out Date</label>
+                            <div class="search-input d-flex">
+                                <input type="text" placeholder="Check-Out Date" onfocus="(this.type='date')"
+                                    onblur="(this.type='text')" id="dateOutHotel">
+                                <!-- <i class="fas fa-calendar-alt"></i> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col no-gutters l-2-4 m-12 search-item-wrapper">
+                        <div class="search-item">
+                            <label for="prices" class="search-label">Price Limit</label>
+                            <div class="search-input d-flex">
+                                <select name="" id="selectHotel" class="search-select">
+                                    <option value="" disabled selected class="search-option--default">Select price
+                                    </option>
+                                    <option value="">$100</option>
+                                    <option value="">$10,000</option>
+                                    <option value="">$50,000</option>
+                                    <option value="">$100,000</option>
+                                    <option value="">$200,000</option>
+                                    <option value="">$300,000</option>
+                                    <option value="">$400,000</option>
+                                    <option value="">$500,000</option>
+                                    <option value="">$600,000</option>
+                                    <option value="">$700,000</option>
+                                    <option value="">$800,000</option>
+                                    <option value="">$900,000</option>
+                                    <option value="">$1,000,000</option>
+                                    <option value="">$2,000,000</option>
+                                </select>
+                                <!-- <input type="text" placeholder="$300.000"> -->
+                                <!-- <i class="fas fa-chevron-down"></i> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col no-gutters l-2-4 m-12 search-item-wrapper">
+                        <div class="search-item search-item--search">
+                            <button class="search-btn search-btn--full btn">Search</button>
+                        </div>
+                    </div>
+
+                </div>
+            </form>
+
         </div>
     </nav>
     <main class="main">

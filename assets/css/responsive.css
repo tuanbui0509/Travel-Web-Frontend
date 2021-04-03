@@ -68,13 +68,14 @@
     .grid {
         max-width: 1140px;
     }
+    
 }
 
 @media (min-width: 1024px) and (max-width: 1199px) {
     .grid {
         max-width: 960px;
     }
-    
+   
 }
 
 @media (min-width: 1024px) {
